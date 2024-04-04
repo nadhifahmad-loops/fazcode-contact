@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Corben:wght@400;700&family=Ramabhadra&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items:center;
+    padding: 0vw 5vw;
+    justify-content: space-between;
+    z-index: 99;
+    background-color: #fff;
+}
+nav a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #4f1a14;
+    font-weight: 700;
+}
+nav i {
+    font-size: 2.2vw;
+}
+.div-logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.div-logo a img {
+    width: 30%;
+}
+.cntr-nav {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav button {
+    display: none;
+}
+.div-block{
+    display: flex;
+}
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg,rgb(205, 187, 70), rgb(234, 118, 9));
+}
+
+.one h1 {
+    font-size: 15vw;
+    color: #fff;
+}
+
+#foto3 {
+    width: 15%;
+    top: 10%;
+    left: 32%;
+    position: absolute;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#foto4 {
+    position: absolute;
+    width: 30%;
+    z-index: 2;
+    left: 35%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#foto5 {
+    width: 20%;
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    right: 25%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#foto6 {
+    width: 18%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#foto7 {
+    width: 18%;
+    top: 60%;
+    left: 75%;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#foto8 {
+    width: 10%;
+    top: 10%;
+    right: 5%;
+    position: absolute;
+}
+.two {
+    display:flex ;
+    width: 100%;
+    height: 100vh;
+    background:#4f1a14;
+}
+.lft-two, .rght-two{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height:100%;
+}
+
+.lft-two svg {
+    width: 90%;
+    transform: rotateX(50deg);
+    margin-top: 50vh;
+}
+.rght-two h1 {
+    color: #ffff;
+    font-size: 2.5vw;
+}
+.rght-two p {
+    color: #ffff;
+    width: 80%;
+    font-size: 19px;
+}
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(218, 181, 16),rgb(190, 90, 8));
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    height: 70vh;
+    border-radius: 20px;
+    margin-top: 10vh;
+    background-color: #fff;
+}
+
+.card h1{
+    font-size:1.8vw ;
+    margin-top: 40vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card a button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(219, 140, 13);
+    color: #fff;
+    cursor: pointer;
+}
+.card button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(219, 140, 13);
+    color: #fff;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color:rgb(167, 109, 16) ;
+}
+#cardfoto2 {
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    top: 20%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#cardfoto5 {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#foto9 {
+    position: absolute;
+    width: 70%;
+    z-index: 9;
+    top: -4%;
+    right: -6%;
+
+}
+#div-popup{
+    width: 30%;
+    position: fixed;
+    height: 30%;
+    background-color: #fff;
+    z-index: 99;
+    top: 30%;
+    right: 35%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan dengan radius 10px */
+    display: none;
+}
+#div-full{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 99;
+    display: none;
+}
+.div-flex{
+    display: flex;
+
+}
+#div-popup h1{
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#div-popup p {
+    margin: 15px;
+}
+#div-popup .div-flex i {
+    color: black;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.line-vertikal{
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    border: black 1px all;
+}
+.div-cntr{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.div-refresh{
+    position: absolute;
+    display: flex;
+    top: 293%;
+    gap: 5px;
+}
+.div-refresh button {
+
+    padding: 2px;
+    cursor: pointer;
+}
+.div-refresh button:hover {
+    background-color: antiquewhite;
+}
+
+.four {
+    padding: 5vw 3vw ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    background-color: #4f1a14;
+    display: block;
+}
+
+.four img {
+    width: 150px;
+    border-radius: 50%;
+}
+.display-block {
+   
+    width: 100%;
+    height: 65vh;
+}
+
+
+.four h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+.four ul {
+    list-style-type: none;
+    gap: 7px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-info {
+    display: block;
+    position: relative;
+    top: 20%;
+    right: 35%;
+    align-items: flex-start;
+    justify-content: first baseline;
+} 
+.div-info2 {
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    width: 50%;
+    text-align: start;
+}
+.div-info2 h1 {
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+}
+.div-info2 p{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.four p {
+    color: #fff;
+}
+.line-vertikal2{
+    width: 100%;
+    border: black 0.5px solid;
+    margin: 40px 0 20px;
+}
+.four .copy {
+    margin-top: 2vw;
+}
+
+.four ul li {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.four ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.div-footer ul li a img {
+    height: 40px;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 769px) {
+
+.rght-two h1 {
+    font-size: 5vw;
+}
+
+.cntr-nav {
+    justify-content: flex-start;
+}
+.cntr-nav a {
+    font-size: 14px;
+}
+
+.div-logo {
+    gap: 1vw;
+}
+nav i {
+    font-size: 4vw;
+    color: #4f1a14;
+}
+
+
+
+
+#foto3 {
+    width: 15%;
+    top: 30%;
+    left: 32%;
+}
+#foto4 {
+    width: 30%;
+    top: 35%;
+    left: 35%;
+}
+#foto9 {
+    top: -2%;
+
+}
+
+.card {
+    height: 60vh;
+}
+#cardfoto2 {
+    top: 30%;
+}
+#cardfoto5 {
+    top: 30%;
+}
+.four .copy {
+    margin-top: 3vw;
+}
+}
+
+@media only screen and (max-width: 426px){
+    .rght-two h1 {
+        font-size: 5vw;
+    }
+    .rght-two p{
+        font-size: 17px;
+    }
+    .card {
+        height: 40vh;
+    }
+    #foto3 {
+        width: 15%;
+        top: 35%;
+        left: 32%;
+    }
+    #foto4 {
+        width: 40%;
+        top: 38%;
+        left: 35%;
+    } 
+    #foto7 {
+        width: 25%;
+        top: 65%;
+        left: 70%;
+    }
+    #foto8 {
+        width: 15%;
+        top: 15%;
+    } 
+    .card h1{
+        font-size:2.3vw ;
+        margin-top: 25vh;
+    }
+    .card a button {
+        padding: 1.5vw 2.5vw;
+        font-size: 1.8vw;
+    }
+    .card button {
+        padding: 1.5vw 2.5vw;
+        font-size: 1.8vw;
+    }
+    #div-popup{
+        width: 40%;
+        height: 20%;
+        top: 30%;
+        right: 30%;
+
+    }
+    .div-flex{
+        display: flex;
+    
+    }
+    #div-popup h1{
+        margin: 10px;
+        font-size: 20px;
+    }
+    #div-popup p {
+        text-align: center;
+        margin: 0 15px;
+        font-size: 12px;
+    }
+   
+    .div-refresh{
+        position: absolute;
+        display: flex;
+        top: 293%;
+        gap: 5px;
+        font-size: 13px;
+    }
+    .div-refresh button {
+    
+        padding: 1px;
+        cursor: pointer;
+    }
+    .four img {
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .four h1 {
+        margin-top: 10px;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .div-info {
+        display: block;
+        position: relative;
+        top: 20%;
+        right: 35%;
+        align-items: flex-start;
+        justify-content: first baseline;
+    } 
+    .div-info2 {
+        position: relative;
+        left: 50%;
+        bottom: 10%;
+        width: 50%;
+        text-align: start;
+    }
+    .div-info2 h1 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .div-info2 p {
+        font-size: 12px;
+    }
+    .line-vertikal2{
+        margin: 20px 0 30px;
+    }
+    .display-block {
+        width: 100%;
+        height: 70vh;
+    }
+}
